@@ -8,7 +8,7 @@ body {
   color: rgb(51, 51, 51);
 }
 
-header {
+.banner {
   height: 500px;
   background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('../images/header.jpg') top / cover no-repeat;
   display: flex;
@@ -16,7 +16,7 @@ header {
   align-items: center;
 }
 
-.title {
+h1 {
   max-width: 780px;
   position: absolute;
   color: white;
@@ -32,7 +32,7 @@ header {
   line-height: 24px;
 }
 
-.profile img {
+.avatar {
   height: 100px;
   border-radius: 100%;
   border: 1px solid white;
@@ -46,4 +46,57 @@ header {
   font-style: italic;
   padding-bottom: 10px;
   border-bottom: 2px solid #e6e6e6;
+  display: inline-block;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.box {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.number {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+  padding-right: 40px;
+}
+
+.wrapped {
+  flex-basis: 16.67%
+}
+
+.section {
+  flex-basis: 66.67%
+}
+
+h2 {
+  margin: 0;
+  font: bold 36px 'Roboto Slab', serif;
+}
+
+a {
+  color: #42b4d6;
+  text-decoration: none;
+  font: normal 16px 'Roboto Slab', serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 32px;
+}
+
+.recommendation {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.section-image {
+  width: 100%;
 }
