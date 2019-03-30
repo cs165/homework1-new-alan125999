@@ -1,3 +1,115 @@
 /**
  TODO(you): Add CSS for the list that you create yourself!
 */
+
+body {
+  margin: 0;
+  height: 100%;
+  color: white;
+  background: rgb(37, 36, 37);
+}
+
+.debug.viewport {
+  perspective-origin: center center;
+}
+
+.debug .parallax-group {
+  transform: translate3d(700px, 0, -800px) rotateY(40deg);
+}
+
+.debug .parallax-child {
+  box-shadow: 0 0 0 2px #000;
+  opacity: 0.9;
+  border: 2px solid tomato;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.viewport {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 300px;
+  perspective-origin: 0 0;
+}
+
+.parallax-group {
+  height: 80vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.parallax-child {
+  transform-origin: 0 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax-base {
+  transform: translateZ(0);
+  z-index: 5;
+}
+
+.parallax-back {
+  transform: translateZ(-300px) scale(2.1);
+}
+
+.parallax-fore {
+  transform: translateZ(90px) scale(.7);
+}
+
+.bg-react {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('../images/react.png') center / cover no-repeat;
+}
+
+.bg-brew {
+  background: url('../images/brew.png') center / cover no-repeat;
+}
+
+.bg-npm {
+  background: url('../images/npm.png') center / cover no-repeat;
+}
+
+.bg-create-react-app {
+  background: url('../images/create-react-app.png') center / cover no-repeat;
+}
+
+.bg-vscode {
+  background: url('../images/vscode.jpeg') center / cover no-repeat;
+}
+
+.bg-dev-server {
+  background: url('../images/dev-server.png') center / cover no-repeat;
+}
+
+.bg-step {
+  background: black;
+  z-index: -2;
+}
+
+.z-back {
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.parallax-group .footer {
+  height: 100vh;
+}
+.parallax-group.footer {
+  height: 100vh;
+}
